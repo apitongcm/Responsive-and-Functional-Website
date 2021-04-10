@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang ="en">
+    <head>
+        <title> Ohms Calculator by sandcastle.io </title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <link rel = "stylesheet" href="styles.css">
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    
+    </head>
+    <body>
+        <nav>
+            <div class="hamburger">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#">About</a></li>
+                <li><a href="#">Project</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+        <section class="landing">
+            <img src= "./asset/tree.svg" alt="bike">
+            <h1>Apitong.io</h1>
+        </section>
+
+        <section class="calculate">
+                <h2>OHMS LAW</h2>
+            <div class="blurred-box">
+
+            <!--VOLTAGE-->    
+            <div id="no1" class="col-sm-4">
+
+                <h4>CALCULATING VOLTAGE</h4><br><br><br>
+                <label type = "text id = "i" name= "i">CURRENT: </label>
+                <input type = "float" id = "num1" value = ""><BR>
+                <label type = "text id = "r" name= "r">RESISTANCE: </label>
+                <input type = "float" id = "num2" value = ""><BR>
+                <p id="demo">The answer is: </p>
+                <button id="but2" type="button" onclick="myFunction()">CALCULATE</button>
+                <br><br><br>
+
+            </div>
+            <div id="no2" class="col-sm-4" id="resist">
+
+                <h4>CALCULATING CURRENT</h4><br><br><br>
+                <label type = "text id = "r" name= "r">RESISTANCE: </label>
+                <input type = "float" id = "num3" value = ""><br>
+                <label type = "text id="v" name = "v">VOLTAGE:</label>
+                <input type = "float" id = "num4" value = ""><br>
+                <p id="demo1">The answer is: </p>
+                <button id="but1" type="button" onclick="myFunction1()">CALCULATE</button>
+                <br><br><br>
+
+
+            </div>
+            <div id="no3" class="col-sm-4">
+
+                <h4>CALCULATING RESISTANCE</h4><br><br><br>
+                <label type = "text id = "i" name= "i">CURRENT: </label>
+                <input type = "float" id = "num5" value = ""><br>
+                <label type = "text id="v" name = "v">VOLTAGE:</label>
+                <input type = "float" id = "num6" value = ""><br>
+                <p id="demo2">The answer is: </p>
+                <button id="but3" type="button" onclick="myFunction2()">CALCULATE</button>
+               <br><br><br>
+
+            </div>
+            </div>
+
+        </section>
+
+        <script src="app.js"></script>
+        
+    </body>
+</html>
